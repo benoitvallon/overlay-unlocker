@@ -1,0 +1,21 @@
+{
+  "name": "Overlay Unlocker",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+    "128": "img/icon-128x128.png"
+  },
+  "browser_action": {
+    "name": "Click to remove overlay",
+    "default_icon": "img/icon-38x38-close.png"
+  },
+  "background":{
+    "scripts":["background.js"]
+  },
+  "permissions": [
+    "tabs",
+    "background",
+    "http://*/*",
+    "https://*/*"
+  ]
+}
