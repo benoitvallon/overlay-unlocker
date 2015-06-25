@@ -6,5 +6,10 @@ chrome.browserAction.onClicked.addListener(function (tab) {
     chrome.browserAction.setIcon({
       path: 'img/icon-38x38-open.png'
     });
+    setTimeout(function() {
+      chrome.browserAction.setIcon({
+        path: 'img/icon-38x38-close.png'
+      });
+    }, 5000);
   });
 });
